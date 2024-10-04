@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Group related form controls using <fieldset> and <legend>.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+ <form action="form_action.php" method="post">
+        <h1>Registration Form</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" minlength="10" maxlength="50" required /><br>
+
+            <label for="department">Department:</label><br>
+            <select>
+              <option>CSE</option>
+               <option>Aero</option>
+                <option>B.Tech</option>
+            </select><br>
+            
+            <label for="phone">Phone:</label><br>
+            <input type="tel" name="phone" id="phone" required /><br>
+
+        </fieldset>
+<fieldset>
+            <legend>Gender</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required />
+                Male
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="female" required />
+                Female
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="other" required />
+                Other
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" id="email" required /><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="psd" id="password" minlength="8" required /><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments" id="comments" rows="5" cols="35" maxlength="200"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreement</legend>
+            <input type="checkbox" name="cb" id="checkbox" required />
+            <label for="checkbox">Declare</label><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        </form>
+  </body>
+</html>
