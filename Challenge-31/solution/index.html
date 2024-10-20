@@ -1,0 +1,20 @@
+<!-- Imagine you have a piece of paper (an HTML element), and you want to write some secret notes (data)
+on it that only you (JavaScript) can read or change. 
+That’s what data-* attributes are for—they’re like sticky notes you can attach to any HTML element.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div data-user-info='{"name": "John", "age": 30}'></div>
+<script>
+  const userInfo = JSON.parse(userElement.dataset.userInfo);
+  console.log(userInfo.name);  // "John"
+  console.log(userInfo.age);   // 30
+</script>
+
+  </body>
+</html>
