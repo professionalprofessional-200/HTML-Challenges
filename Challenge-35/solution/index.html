@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Use HTML5 attributes like autofocus, placeholder, and pattern in forms</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Mart Smith">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+  <body>
+    <form>
+  <label for="username"><i class="fas fa-address-book"></i>Username:</label>
+  <input type="text" id="username" name="username" placeholder="Username" minlength="5" maxlength="15" required autofocus>
+<br>
+  <label for="email"><i class="fas fa-envelope-square"></i>Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email address" required>
+<br>
+  <label for="phone"><i class="fas fa-phone"></i>Phone Number:</label>
+  <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+<br>
+  <label for="password"><i class="fas fa-edit"></i>Password:</label>
+  <input type="password" id="password" name="password" minlength="8" placeholder="8 characters minimum" required>
+<br>
+  <button>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 3H21V21H3V3Z" stroke="black" stroke-width="2"/>
+    <path d="M6 7H18M6 12H12M6 17H12" stroke="black" stroke-width="2"/>
+  </svg>
+  Save
+</button>
+
+</form>
+
+  </body>
+</html>
