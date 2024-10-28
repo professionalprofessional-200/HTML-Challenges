@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Use HTML5 attributes like autofocus, placeholder, and pattern in forms</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Mart Smith">
+  </head>
+  <body>
+    <form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Username" minlength="5" maxlength="15" required autofocus>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email address" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" minlength="8" placeholder="8 characters minimum" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </body>
+</html>
