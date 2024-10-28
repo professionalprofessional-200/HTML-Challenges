@@ -1,0 +1,22 @@
+body {
+       font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+        }
+ main {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+        }
+figure {
+      margin: 0;
+      text-align: center;
+        }
+figcaption {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 10px;
+        }
+ 
