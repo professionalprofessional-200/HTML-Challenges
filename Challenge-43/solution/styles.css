@@ -1,0 +1,56 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header style */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Container style */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Column style */
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets (width up to 768px) */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For mobile phones (width up to 480px) */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1em;
+    }
+
+    .column {
+        font-size: 0.9em;
+    }
+}
