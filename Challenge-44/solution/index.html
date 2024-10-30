@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Form Fields</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Pet Ownership Form</h2>
+    <form id="petForm">
+        <!-- Question: Do you have a pet? -->
+        <label for="hasPet">Do you have a pet?</label>
+        <select id="hasPet" name="hasPet" onchange="togglePetFields()">
+            <option value="">--Select--</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <!-- Additional fields, hidden by default -->
+        <div id="petFields" style="display: none;">
+            <label for="petType">What type of pet do you have?</label>
+            <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat">
+
+            <label for="petName">What’s your pet’s name?</label>
+            <input type="text" id="petName" name="petName" placeholder="Pet's name">
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
