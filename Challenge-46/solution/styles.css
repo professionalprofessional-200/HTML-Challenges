@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex: 1;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    flex: 2;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Flexbox layout for larger screens */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .header {
+        flex-basis: 100%;
+    }
+
+    .sidebar {
+        flex-basis: 25%;
+    }
+
+    .main-content {
+        flex-basis: 75%;
+    }
+
+    .footer {
+        flex-basis: 100%;
+    }
+}
